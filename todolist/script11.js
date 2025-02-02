@@ -12,9 +12,18 @@
 
 const taskInput = document.querySelector("#task-input");
 const addButton = document.querySelector("#add-button");
+let tabs = document.querySelectorAll(".task-tabs div");
+console.log(tabs);
 const taskList = [];
+let mode = "all";
+let filterList = [];
 
 addButton.addEventListener("click", addTask);
+for (let i = 1; i < tabs.length; i++) {
+  tabs[i].addEventListener("click", function (e) {
+    filter(e);
+  });
+}
 
 function addTask() {
   let task = {
@@ -30,23 +39,33 @@ function addTask() {
 }
 
 function render() {
+  //1.내가 선택한 탭에 따라서
+  let list = [];
+  if (mode === "all") {
+    //all taskList
+    list = taskList;
+  } else if (mode === "ongoing" || "done") {
+    //ongoing,done filterList
+    list = filterList;
+  }
+  //2.리스트를 달리보여준다
   let resultHTML = "";
 
-  for (let i = 0; i < taskList.length; i++) {
-    if (taskList[i].isComplete == true) {
+  for (let i = 0; i < list.length; i++) {
+    if (list[i].isComplete == true) {
       resultHTML += `<div class="task" id="task-done">
-            <div>${taskList[i].taskContent}</div>
+            <div>${list[i].taskContent}</div>
             <div>
-              <button onclick="toggleComplete('${taskList[i].id}')">check</button>
-              <button onclick="deleteButton('${taskList[i].id}')">delete</button>
+              <button onclick="toggleComplete('${list[i].id}')">check</button>
+              <button onclick="deleteButton('${list[i].id}')">delete</button>
             </div>
           </div>`;
     } else {
       resultHTML += `<div class="task">
-            <div>${taskList[i].taskContent}</div>
+            <div>${list[i].taskContent}</div>
             <div>
-              <button onclick="toggleComplete('${taskList[i].id}')">check</button>
-              <button onclick="deleteButton('${taskList[i].id}')">delete</button>
+              <button onclick="toggleComplete('${list[i].id}')">check</button>
+              <button onclick="deleteButton('${list[i].id}')">delete</button>
             </div>
           </div>`;
     }
@@ -55,26 +74,4 @@ function render() {
   document.querySelector("#task-board").innerHTML = resultHTML;
 }
 
-function toggleComplete(id) {
-  for (let i = 0; i < taskList.length; i++) {
-    if (taskList[i].id == id) {
-      taskList[i].isComplete = !taskList[i].isComplete;
-      break;
-    }
-  }
-  render();
-}
-
-function deleteButton(id) {
-  for (let i = 0; i < taskList.length; i++) {
-    if (taskList[i].id == id) {
-      taskList.splice(i, 1);
-      break;
-    }
-  }
-  render();
-}
-
-function randomIDGenerate() {
-  return "_" + Math.random().toString(36).substr(2, 9);
-}
+functi
