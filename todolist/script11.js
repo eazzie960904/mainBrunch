@@ -74,4 +74,54 @@ function render() {
   document.querySelector("#task-board").innerHTML = resultHTML;
 }
 
-functi
+function toggleComplete(id) {
+  for (let i = 0; i < taskList.length; i++) {
+    if (taskList[i].id == id) {
+      taskList[i].isComplete = !taskList[i].isComplete;
+      break;
+    }
+  }
+  render();
+}
+
+function deleteButton(id) {
+  for (let i = 0; i < taskList.length; i++) {
+    if (taskList[i].id == id) {
+      taskList.splice(i, 1);
+      break;
+    }
+  }
+  render();
+}
+
+function filter(e) {
+  mode = e.target.id;
+  filterList = [];
+  console.log(mode);
+  if (mode === "all") {
+    //전체리스트를 보여준다
+    render();
+  } else if (mode === "ongoing") {
+    //진행중인 아이템을 보여준다
+    //task.isComplete=false
+    for (let i = 0; i < taskList.length; i++) {
+      if (taskList[i].isComplete === false) {
+        filterList.push(taskList[i]);
+      }
+    }
+    render();
+    console.log(filterList);
+  } else if (mode === "done") {
+    //task.isComplete=true
+    for (let i = 0; i < taskList.length; i++) {
+      if (taskList[i].isComplete === true) {
+        filterList.push(taskList[i]);
+      }
+    }
+    render();
+  }
+}
+
+function randomIDGenerate() {
+  return "_" + Math.random().toString(36).substr(2, 9);
+}
