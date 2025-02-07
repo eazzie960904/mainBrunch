@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  background-image: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 60%;
+  height: 100vh;
+  background-color: #fff;
+  h1 {
+    text-align: center;
+  }
+  .inputArea {
+    padding: 20px;
+    #taskInput {
+      background: rgba($color: #eee, $alpha: 0.5);
+      height: 30px;
+      border: none;
+      outline: none;
+    }
+    #button {
+      width: 30px;
+      height: 30px;
+      border: none;
+    }
+  }
+}
+.taskArea {
+  border: 1px solid lightgray;
+  .taskTabs {
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+    div {
+      padding: 1em;
+      cursor: pointer;
+    }
+    #underLine {
+      width: 55px;
+      height: 4px;
+      background-color: lightpink;
+      position: absolute;
+      top: 47px;
+      left: 0px;
+      padding: 0;
+    }
+  }
+  .task {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+  }
+  .taskDone {
+    text-decoration: line-through;
+  }
+}

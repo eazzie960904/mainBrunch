@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./diary.css" />
+    <script defer src="./diary.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4effeb5db1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo List</h1>
+      <section class="inputArea">
+        <input type="text" id="taskInput" placeholder="오늘의 할일" />
+        <button id="button">+</button>
+      </section>
+
+      <section class="taskArea">
+        <div class="taskTabs">
+          <div id="underLine"></div>
+          <div id="all">All</div>
+          <div id="ongoing">ongoing</div>
+          <div id="done">done</div>
+        </div>
+        <div class="taskBoard"></div>
+      </section>
+    </div>
+  </body>
+</html>

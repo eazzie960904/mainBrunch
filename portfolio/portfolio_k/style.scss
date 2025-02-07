@@ -1,7 +1,8 @@
 .main {
-  img {
-    width: 100%;
-  }
+  // img {
+  //   width: 100%;
+  // }
+  background-image: image();
   .intro {
     width: 70%;
     height: 50vh;
@@ -380,6 +381,41 @@ footer {
       border: 1px solid #000;
       background: #000;
       color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main {
+    border: 1px solid #f00;
+    .intro {
+      top: 50%;
+      .mainDesc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .subDesc {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main {
+    .intro {
+      width: 100%;
+      height: 25vh;
+      font-size: 0.05em;
+      top: 15%;
+      .mainDesc {
+        gap: 20px;
+        .subDesc {
+          display: none;
+        }
+      }
     }
   }
 }
