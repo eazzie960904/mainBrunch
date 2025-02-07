@@ -1,0 +1,45 @@
+body {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background: #f4efe4;
+}
+body .firstRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 10%;
+}
+body .firstRow .title {
+  font-size: 2em;
+  font-weight: 600;
+}
+body .images {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+body .images img {
+  max-width: 30%;
+  height: 438px;
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .firstRow {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  body .images {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+  body .images img {
+    max-width: 450px;
+  }
+}

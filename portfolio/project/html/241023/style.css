@@ -1,0 +1,61 @@
+body .wrapper {
+  display: flex;
+}
+body .wrapper img {
+  width: 400px;
+  height: 98vh;
+}
+body .wrapper .bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .wrapper .bottom .title {
+  font-size: 5em;
+  font-weight: 500;
+}
+body .wrapper .bottom .sub {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 100px;
+  bottom: 10px;
+  z-index: 100;
+}
+body .wrapper .bottom .sub .subTitle {
+  font-size: 1.8em;
+  font-weight: 600;
+}
+body .wrapper .bottom .sub .desc {
+  width: 350px;
+  height: 150px;
+  border-top: 1px solid #000;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+body .wrapper .bottom .sub .desc div {
+  border-bottom: 1px solid #000;
+  padding-top: 10px;
+}
+body .wrapper .bottom .beige {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}
+body .wrapper .bottom .beige img {
+  width: 300px;
+  height: 400px;
+}
+
+@media screen and (max-width: 900px) {
+  body .wrapper {
+    flex-direction: column;
+  }
+  body .wrapper .bottom .sub {
+    right: 0;
+    bottom: 50px;
+  }
+  body .wrapper .bottom .beige {
+    position: relative;
+  }
+}

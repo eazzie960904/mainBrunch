@@ -1,0 +1,82 @@
+body {
+  background: #f9f4ed;
+  padding: 50px;
+}
+body .first {
+  position: absolute;
+  bottom: 20px;
+}
+body .item {
+  display: flex;
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+}
+body .item .second {
+  position: absolute;
+  right: 70%;
+  bottom: 0;
+  display: grid;
+  width: 300px;
+  height: 350px;
+  padding: 50px;
+  background: #e8e8e8;
+  z-index: 100;
+}
+body .item .second .color {
+  font-size: 25px;
+}
+body .item .second .palate {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+body .item .second .palate .color1 {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+body .item .second .palate .color1 .color1_2 {
+  background: #d7d1b9;
+}
+body .item .second .palate .color2 {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+body .item .second .palate .color2 .color2_2 {
+  background: #bfbfbd;
+}
+body .item .second .palate .color3 {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+body .item .second .palate .color3 .color3_2 {
+  background: #b34e00;
+}
+body .item .second .palate .color4 {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+body .item .second .palate .color4 .color4_2 {
+  background: #a6a88d;
+}
+body .item .third {
+  width: 300px;
+  height: 550px;
+  border: 10px solid #000;
+  border-bottom: none;
+  border-radius: 10% 10% 0 0;
+  background: #fff;
+}
+body .item .third img {
+  width: 300px;
+  height: 300px;
+  padding-top: 50px;
+}

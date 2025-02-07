@@ -1,0 +1,45 @@
+body {
+  background-image: url("./img/girl17.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  gap: 50px;
+  padding: 0 50px;
+}
+body .title {
+  font-size: 2em;
+}
+body .sub {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body .sub .subTitle {
+  font-weight: bold;
+}
+body .boxOut {
+  width: 50%;
+  height: 60vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .boxIn {
+  width: 80%;
+  height: 80%;
+  background: #f9f4eb;
+  color: black;
+  padding: 50px 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .boxIn .boxInSignature {
+  font-size: 6.5em;
+  color: #e7e2d9;
+}
