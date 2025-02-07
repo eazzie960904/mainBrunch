@@ -1,6 +1,6 @@
 nav a {
   text-decoration: none;
-  color: black;
+  color: #000;
   margin: 2em;
 }
 
@@ -18,19 +18,6 @@ nav:nth-child(2) {
 #horizontal-underline {
   position: absolute;
   background-color: pink;
-  width: 0;
   top: 0;
   left: 0;
-  height: 4px;
-  transition: 0.5s;
-}
-
-#vertical-underline {
-  position: absolute;
-  background-color: lightblue;
-  width: 0;
-  top: 0;
-  left: 0;
-  height: 4px;
-  transition: 0.5s;
-}
+  wid

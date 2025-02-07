@@ -13,9 +13,9 @@ function horizontalIndicator(e) {
 }
 
 let verticalUnderLine = document.querySelector("#vertical-underline");
-let verticlaMenus = document.querySelectorAll("nav:nth-child(2) a");
+let verticalMenus = document.querySelectorAll("nav:nth-child(2) a");
 
-verticlaMenus.forEach((menu) =>
+verticalMenus.forEach((menu) =>
   menu.addEventListener("click", (e) => verticalIndicator(e))
 );
 
