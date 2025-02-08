@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jQuery -->
+    <script
+      type="text/javascript"
+      defer
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      defer
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <!-- slick slider -->
+    <link rel="stylesheet" href="./slick/slick.css" />
+    <link rel="stylesheet" href="./slick/slick-theme.css" />
+    <script defer src="./slick/slick.min.js"></script>
+    <!-- scrollTo -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"
+    ></script>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/3f2ea24883.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css & js -->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="banner">
+          <ul class="lnb">
+            <li>
+              <a href="#none" id="playZone"
+                ><em><i class="fa-solid fa-arrow-left"></i></em> 플레이존</a
+              >
+            </li>
+            <li>
+              <a href="#none" id="searchBar">
+                <i class="fa-solid fa-chevron-left"></i>
+                <div>
+                  지금 세일중인 상품을 알고있나요?
+                  <button>쇼핑하기</button>
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#none" id="rightSide">
+                <div><img src="./img/head.PNG" alt="head" />로그인</div>
+                <div>
+                  <img src="./img/lego.PNG" alt="lego" />레고 Insiders 회원가입
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav>
+          <div class="navBar">
+            <div class="logo">
+              <a href="#none">
+                <img src="./img/logo.png" alt="logo" />
+              </a>
+            </div>
+            <ul class="gnb">
+              <li><a href="#">레고 제품 쇼핑</a></li>
+              <li><a href="#introduce">레고 브랜드 소개</a></li>
+              <li><a href="#support">고객 지원</a></li>
+              <li><a href="#event" class="christmas">크리스마스</a></li>
+            </ul>
+          </div>
+          <div class="rightBar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
+        </nav>
+        <div class="trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </header>
+
+      <main class="intro">
+        <div class="inner">
+          <div class="heading"></div>
+        </div>
+      </main>
+
+      <section id="ranking" class="ranking">
+        <div class="inner">
+          <div class="ranking_content">
+            <h2>이번 주 최고 인기</h2>
+            <div class="items">
+              <div class="item">
+                <div class="up-image">
+                  <img src="./img/garden.PNG" alt="city01" />
+                </div>
+                <div class="down-desc">
+                  <h3>내 손으로 만드는 비밀의 정원</h3>
+                  <p>신제품 식물원과 함께 빅토리아 시대의 미학을 느껴보세요.</p>
+                  <a class="btn-explore" href="#none">쇼핑하기 ></a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="up-image">
+                  <img src="./img/flower.PNG" alt="city02" />
+                </div>
+                <div class="down-desc">
+                  <h3>계절을 여는 특별한 방법</h3>
+                  <p>
+                    화한을 비롯한 여러 전시품으로 더욱 분위기 있는 가을과 겨울을
+                    맞이해 보세요.
+                  </p>
+                  <a class="btn-explore" href="#none">쇼핑하기 ></a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="up-image">
+                  <img src="./img/wikid.PNG" alt="city03" />
+                </div>
+                <div class="down-desc">
+                  <h3>이게 뭘까?</h3>
+                  <p>레고 | 디즈니 팀 버튼의 크리스마스 악몽을 만나보세요.</p>
+                  <a class="btn-explore" href="#none">쇼핑하기 > </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonial" class="testimonial">
+        <div class="inner">
+          <div class="testimonial_content">
+            <h2><b>주요세트</b></h2>
+            <div class="myslider">
+              <div>
+                <p class="client">
+                  <img src="./img/product1.PNG" alt="client01" />
+                </p>
+              </div>
+
+              <div>
+                <p class="client">
+                  <img src="./img/product2.PNG" alt="client02" />
+                </p>
+              </div>
+
+              <div>
+                <p class="client">
+                  <img src="./img/product3.PNG" alt="client03" />
+                </p>
+              </div>
+
+              <div>
+                <p class="client">
+                  <img src="./img/product4.PNG" alt="client04" />
+                </p>
+              </div>
+
+              <div>
+                <p class="client">
+                  <img src="./img/product5.PNG" alt="client05" />
+                </p>
+              </div>
+
+              <div>
+                <p class="client">
+                  <img src="./img/product6.PNG" alt="client06" />
+                </p>
+              </div>
+
+              <div>
+                <p class="client">
+                  <img src="./img/product7.PNG" alt="client06" />
+                </p>
+              </div>
+
+              <div>
+                <p class="client">
+                  <img src="./img/product8.PNG" alt="client06" />
+                </p>
+              </div>
+
+              <div>
+                <p class="client">
+                  <img src="./img/product9.PNG" alt="client06" />
+                </p>
+              </div>
+
+              <div>
+                <p class="client">
+                  <img src="./img/product10.PNG" alt="client06" />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonial" class="testimonial">
+        <div class="inner">
+          <div class="testimonial_content">
+            <h2><b>다른 사람들이 구매한 제품</b></h2>
+
+            <div class="myslider">
+              <div>
+                <p class="client">
+                  <img src="./img/product11.PNG" alt="client01" />
+                </p>
+              </div>
+              <div>
+                <p class="client">
+                  <img src="./img/product12.PNG" alt="client02" />
+                </p>
+              </div>
+              <div>
+                <p class="client">
+                  <img src="./img/product13.PNG" alt="client03" />
+                </p>
+              </div>
+              <div>
+                <p class="client">
+                  <img src="./img/product14.PNG" alt="client04" />
+                </p>
+              </div>
+              <div>
+                <p class="client">
+                  <img src="./img/product15.PNG" alt="client05" />
+                </p>
+              </div>
+              <div>
+                <p class="client">
+                  <img src="./img/product16.PNG" alt="client06" />
+                </p>
+              </div>
+              <div>
+                <p class="client">
+                  <img src="./img/product17.PNG" alt="client06" />
+                </p>
+              </div>
+              <div>
+                <p class="client">
+                  <img src="./img/product18.PNG" alt="client06" />
+                </p>
+              </div>
+              <div>
+                <p class="client">
+                  <img src="./img/product19.PNG" alt="client06" />
+                </p>
+              </div>
+              <div>
+                <p class="client">
+                  <img src="./img/product20.PNG" alt="client06" />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="callaction">
+        <div class="callaction_heading">
+          <h2>
+            <b>자비에 영재 학교에서 만나요!</b><br />
+            마블 팬이라면 신제품 레고 | 마블 엑스맨: 엑 맨션이 마음에 쏙 들예요.
+          </h2>
+          <a href="#none">구매하기 > </a>
+        </div>
+      </section>
+
+      <section id="blog" class="blog">
+        <div class="inner">
+          <div class="blog_content">
+            <div class="blog_header">
+              <h2>궁금했던이야기</h2>
+            </div>
+            <hr class="divider" />
+            <div class="post_content">
+              <div class="recent_post_items">
+                <div class="post_item">
+                  <div class="post_image">
+                    <img src="./img/santahome.PNG" alt="recent01" />
+                  </div>
+                  <div class="post_desc">
+                    <h3>환상적인 북극의 세계로!</h3>
+                    <p>
+                      엘프들이 열기구를 타고 우편물을 배달하고, 산타가 아늑한
+                      장작불 옆에서 아이들의 선물 목록을 살펴보는 세계로
+                      초대합니다.
+                      <span>더보기 ></span>
+                    </p>
+                  </div>
+                </div>
+                <div class="post_item">
+                  <div class="post_image">
+                    <img src="./img/tree.PNG" alt="recent02" />
+                  </div>
+                  <div class="post_desc">
+                    <h3>눈길을 사로잡는 연말연시 테마크리스마스 트리</h3>
+                    <p>
+                      장식과 양초를 이용해 색색의 트리를 만들고 장식 매트 위에
+                      세운 노란색 별을 꼭대기에 붙이면 완벽한 트리가 완성됩니다.
+                      <span>더보기 ></span>
+                    </p>
+                  </div>
+                </div>
+                <div class="post_item">
+                  <div class="post_image">
+                    <img src="./img/candle.PNG" alt="recent03" />
+                  </div>
+                  <div class="post_desc">
+                    <h3>산타의 방문을 보장합니다!</h3>
+                    <p>
+                      집안을 축제의 분위기로 채우고, 브릭 축제의 분위기로
+                      채워보세요. 연말연시 선물로 딱 어울릴 뿐 아니라 조립하고
+                      전시하는 즐거움이 무한히 펼쳐집니다.
+                      <span>더보기 ></span>
+                    </p>
+                  </div>
+                </div>
+                <div class="post_item">
+                  <div class="post_image">
+                    <img src="./img/flower2.PNG" alt="recent03" />
+                  </div>
+                  <div class="post_desc">
+                    <h3>가을과 겨울의 정수를 화한에 담아 느낌을 살려보세요.</h3>
+                    <p>
+                      전나무 잎, 색색의 열매, 향긋한 오렌지 조각, 매콤한 계피,
+                      흙내음 나는 솔방울을 어떻게 조합하여 아름다운 화환을
+                      만들어볼까요?
+                      <span>더보기 ></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="inner">
+          <div class="about_content">
+            <div class="desc">
+              <h2>레고 스페셜 혜택</h2>
+              <p>
+                오늘 단 하루, 최대 40% 할인에 추가 쿠폰 증정! 라이브 방송에서만
+                만날 수 있는 특별한 레고 머그컵 증정까지 놓치지 마세요! 역사,
+                건축, 미술, 여행을 좋아하고 파리를 사랑하는 성인 조립 취미가를
+                위한 선물로 이 조립 세트를 추천합니다.<br /><br />
+                850년의 세월 첫번째 돌이 놓여졌던 1163년부터 시작하여 화재가
+                발생하기 전인 2019년의 노트르담이 그때 그 모습 그대로
+                되살아납니다. 한층 몰입감 넘치는 조립의 여정을 위해 실제
+                노트르담 대성당의 건설 및 복원 순서와 모델의 조립 과정이
+                일치하도록 디자인 되었습니다.
+              </p>
+              <a href="#none">자세히 보기</a>
+            </div>
+            <div class="photo">
+              <img src="./img/castle.PNG" alt="about01" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="festival">
+        <div class="festival_heading">
+          <h3><span>#LEGOChristmas</span></h3>
+          <h4>
+            팬 커뮤니티에 올라온 인기 사진을 살펴보세요! 레고 작품을 전 세계
+            사람들과 공유하고 싶으세요?<br />
+            Instram에 사진을 올린 후 @LEGO를 태그하여 레고 웹사이트에 작품을
+            소개할 기회를 잡으세요.
+          </h4>
+          <div class="btns">
+            <a href="#none">쇼핑하기 ></a>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="inner">
+          <div class="footer_content">
+            <ul class="community">
+              <img src="./img/logo.PNG" alt="logo" />
+              <li class="country">대한민국</li>
+              <li><a href="#none">특별한 아이디어</a></li>
+              <li><a href="#none">레고 카탈로그</a></li>
+            </ul>
+            <ul class="network">
+              <li>회사소개</li>
+              <li><a href="#none">레고 그룹 소개</a></li>
+              <li><a href="#none">레고 뉴스</a></li>
+              <li><a href="#none">지속가능한 사업</a></li>
+              <li><a href="#none">공급망 투명성 선언</a></li>
+              <li><a href="#none">레고 제품 인증</a></li>
+              <li><a href="#none">LEGO 채용정보</a></li>
+              <li><a href="#none">LEGO compliance line</a></li>
+            </ul>
+            <ul class="help">
+              <li>지원</li>
+              <li><a href="#none">연락처</a></li>
+              <li><a href="#none">조립설명서 찾기</a></li>
+              <li><a href="#none">부품누락</a></li>
+              <li><a href="#none">배송 및 반품</a></li>
+              <li><a href="#none">결제 방식</a></li>
+              <li><a href="#none">이용약관</a></li>
+              <li><a href="#none">제품 리콜</a></li>
+            </ul>
+            <ul class="help">
+              <li>명소</li>
+              <li><a href="#none">레고 하우스</a></li>
+              <li><a href="#none">레고랜드 파크</a></li>
+              <li><a href="#none">레고랜드 디스커버리 센터</a></li>
+            </ul>
+            <ul class="help">
+              <li>기타정보</li>
+              <li><a href="#none">LEGOMagazine</a></li>
+              <li><a href="#none">레고 에듀케이션</a></li>
+              <li><a href="#none">레고 아이디어</a></li>
+              <li><a href="#none">레고 파운데이션</a></li>
+              <li><a href="#none">제휴 프로그램</a></li>
+            </ul>
+          </div>
+          <div class="footer_subscrip">
+            <div class="footer_emailsubsc">
+              <div>마케팅 이메일 구독</div>
+              <div class="footer_email">
+                <input
+                  class="footer_email_input"
+                  type="text"
+                  placeholder="이메일 주소"
+                />
+                <button>></button>
+              </div>
+            </div>
+            <div>
+              <div>팔로우하기</div>
+              <img src="./img/footersns.PNG" alt="footersns" />
+            </div>
+          </div>
+          <div class="footer_descrip">
+            <div class="footer_personal">
+              <a>개인정보처리방침</a>
+              <a>쿠키</a>
+              <a>법적고지</a>
+              <a>이용약관</a>
+              <a>접근성</a>
+              <a>쿠키설정</a>
+            </div>
+            <div class="footerDesc">
+              LEGO Systme A/S, DK-7190 Billund, Denmark. 만 18세 이상부터 온라인
+              구매가 가능합니다. 레고, 레고 로고, 미니피겨, 듀플로, 프렌즈 로고,
+              미니피겨 로고, 드림즈, 닌자고, 비디요 및 마인드스톰은 레고 그룹의
+              상표입니다. 2024 The LEGO Group. All rights reserved. 이 사이트를
+              이용하면 이용약관에 동의하는 것으로 간주됩니다. 레고코리아(주)
+              대표이사: CLAUS KRISTENSEN(크라우스크리스텐센), 정희영 | 주소:
+              서울특별시 강남구 강남대로 382, 메리츠타워 12층 우편번호 06232
+              사업자등록번호:126-81-25525| 통신판매업신고 제
+              2010-서울강남-00549호 사업자등록확인고객센터
+              무료전화:080-880-0166|업무시간:월요일-금요일 오전9시 오후6시
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <a class="gototop" href="#">
+      <i class="fa-solid fa-chevron-up"></i>
+    </a>
+  </body>
+</html>

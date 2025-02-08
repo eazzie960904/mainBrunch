@@ -20,4 +20,17 @@ nav:nth-child(2) {
   background-color: pink;
   top: 0;
   left: 0;
-  wid
+  width: 0;
+  height: 4px;
+  transition: 0.5s;
+}
+
+#vertical-underline {
+  position: absolute;
+  background-color: lightblue;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  transition: 0.5s;
+}
