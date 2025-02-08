@@ -1,8 +1,7 @@
 .main {
-  // img {
-  //   width: 100%;
-  // }
-  background-image: image();
+  img {
+    width: 100%;
+  }
   .intro {
     width: 70%;
     height: 50vh;
@@ -385,16 +384,19 @@ footer {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 880px) {
   .main {
-    border: 1px solid #f00;
     .intro {
-      top: 50%;
+      height: 30vh;
+      top: 20%;
+
       .mainDesc {
         display: flex;
         flex-direction: column;
         justify-content: center;
-
+        .snsLink {
+          gap: 1.5em;
+        }
         .subDesc {
           display: none;
         }
@@ -403,19 +405,12 @@ footer {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 420px) {
   .main {
     .intro {
-      width: 100%;
-      height: 25vh;
-      font-size: 0.05em;
+      font-size: 0.5em;
+      height: 20vh;
       top: 15%;
-      .mainDesc {
-        gap: 20px;
-        .subDesc {
-          display: none;
-        }
-      }
     }
   }
 }
