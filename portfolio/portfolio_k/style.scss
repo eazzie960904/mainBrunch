@@ -403,6 +403,24 @@ footer {
       }
     }
   }
+  .introduce {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 10px;
+    .introImg {
+      display: flex;
+      justify-content: center;
+      img {
+        height: 30vh;
+      }
+    }
+  }
+  .symbol {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 420px) {
