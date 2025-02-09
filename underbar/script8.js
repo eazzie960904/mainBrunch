@@ -1,7 +1,5 @@
-let horizontalUnderLine = document.querySelector("#horizontal-underline");
-let horizontalMenus = document.querySelectorAll("nav:first-child a");
-let verticalUnderLine = document.querySelector("#vertical-underline");
-let verticalMenus = document.querySelectorAll("nav:nth-child(2) a");
+const horizontalUnderLine = document.querySelector("#horizontal-underline");
+const horizontalMenus = document.querySelectorAll("nav:first-child a");
 
 horizontalMenus.forEach((menu) =>
   menu.addEventListener("click", (e) => horizontalIndicator(e))
@@ -14,7 +12,10 @@ function horizontalIndicator(e) {
     e.currentTarget.offsetTop + e.currentTarget.offsetHeight + "px";
 }
 
-verticalMenus.forEach((menu) =>
+const verticalUnderLine = document.querySelector("#vertical-underline");
+const verticalMenu = document.querySelectorAll("nav:nth-child(2) a");
+
+verticalMenu.forEach((menu) =>
   menu.addEventListener("click", (e) => verticalIndicator(e))
 );
 

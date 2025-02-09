@@ -410,25 +410,3 @@ footer {
     align-items: center;
     gap: 0;
     padding: 10px;
-    .introImg {
-      display: flex;
-      justify-content: center;
-      img {
-        height: 30vh;
-      }
-    }
-  }
-  .symbol {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .main {
-    .intro {
-      font-size: 0.5em;
-      height: 20vh;
-      top: 15%;
-    }
-  }
-}
