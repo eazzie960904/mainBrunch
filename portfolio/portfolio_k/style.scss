@@ -429,35 +429,4 @@ footer {
     }
     .newSubs {
       flex-direction: column;
-      height: 70%;
-      .newSubsBoxes {
-        .newSubsBox {
-          gap: 10px;
-          .newSubsBox1 {
-            gap: 10px;
-          }
-          .newSubsBox2 {
-            gap: 10px;
-          }
-        }
-      }
-      .newSubsImg {
-        img {
-          width: 100%;
-          height: 50vh;
-          padding: 0;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .main {
-    .intro {
-      font-size: 0.5em;
-      height: 20vh;
-      top: 15%;
-    }
-  }
-}
+ 
