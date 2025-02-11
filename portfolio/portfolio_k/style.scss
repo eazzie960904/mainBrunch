@@ -185,67 +185,13 @@
   }
 }
 
-.collections {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  gap: 80px;
-  .collectionsImg {
-    width: 100%;
-    height: 100%;
-    background: #f7f3f0;
-  }
-  .collectionsSubs {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    padding: 50px 0;
-    .collectionsTitle {
-      font-size: 2em;
-    }
-    .collectionsDesc {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      text-align: right;
-      padding-right: 300px;
-      font-size: 1.5em;
-      .collectionsDescImg {
-        width: 100%;
-        height: 100%;
-        .swiper {
-          width: 800px;
-          height: 700px;
-          position: absolute;
-          right: 0;
-          .swiper-button-next,
-          .swiper-button-prev {
-            color: #d9d9d9;
-          }
-          .swiper-pagination-bullet {
-            border: 1px solid #d9d9d9;
-            background: transparent;
-          }
-          .swiper-pagination-bullet-active {
-            border: 1px solid #d9d9d9;
-            background: transparent;
-          }
-        }
-      }
-    }
-  }
-}
-
 .bestItems {
   width: 100%;
-  height: 80vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 50px;
-  padding: 100px;
+  padding: 70px;
   .bestItemsTitle {
     font-size: 2em;
   }
@@ -255,7 +201,7 @@
     gap: 30px;
     .bestItemsSubsBoxes {
       width: 100%;
-      height: 450px;
+      height: 350px;
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -429,4 +375,48 @@ footer {
     }
     .newSubs {
       flex-direction: column;
- 
+      height: 70%;
+      .newSubsBoxes {
+        .newSubsBox {
+          gap: 10px;
+          .newSubsBox1 {
+            gap: 10px;
+          }
+          .newSubsBox2 {
+            gap: 10px;
+          }
+        }
+      }
+      .newSubsImg {
+        img {
+          width: 100%;
+          height: 50vh;
+          padding: 0;
+        }
+      }
+    }
+  }
+  .bestItems {
+    padding: 20px;
+    .bestItemsSubs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      .bestItemsSubsBoxes {
+        width: 70%;
+        height: 200px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .main {
+    .intro {
+      font-size: 0.5em;
+      height: 20vh;
+      top: 15%;
+    }
+  }
+}
