@@ -411,7 +411,7 @@ footer {
     }
   }
   footer {
-    padding: 20px;
+    padding: 40px;
     .footerEmail {
       width: 100%;
       input {
@@ -431,5 +431,8 @@ footer {
       height: 20vh;
       top: 15%;
     }
+  }
+  footer {
+    padding: 20px;
   }
 }
